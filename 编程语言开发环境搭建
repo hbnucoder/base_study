@@ -1,0 +1,38 @@
+#开发语言环境搭建
+```
+1. 编程语言：C/C++ JAVA PHP NODEJS Python Perl Ruby Go 
+2. 软件操作系统: Linux Window
+3. 硬件：X86架构的的CPU 
+4. 开发环境搭建步骤：
+	1.	编译平台下载。
+	2.	环境变量设置。
+	3.	编辑器下载。
+	4.	目标文件运行。
+```	 	
+#C/C++环境的搭建
+```
+1. 编译平台下载：Window：MinGW https://gcc.gnu.org Linux：https://gcc.gnu.org 
+2. 环境变量设置：
+	1.	Window：我的电脑-属性-高级系统设置-高级环境变量-系统环境变量-PATH，Window版本不一样操作也不一样。
+	2. Linux: /etc/profile
+3. 编辑器使用：
+	1.	Window:gvim,记事本,sublime text,edit plus,notepad,bracket
+	2. Linux:Vim,Dart Editor,Sublime Text 3,nano 
+4. 目标编译运行：
+	1.	gcc -Wall -o 生成的文件 源文件。
+	2. 运行生成的文件
+```	 	
+#JAVA环境的搭建
+```
+1. 运行平台下载：根据不同的平台下载：http://www.oracle.com/technetwork/java/javase/downloads/index.html
+2. 环境变量设置：
+	1.	Window：我的电脑-属性-高级系统设置-高级环境变量-系统环境变量-PATH，Window版本不一样操作也不一样。
+	2. Linux: /etc/profile
+3. 编辑器使用：
+	1.	Window:gvim,记事本,sublime text,edit plus,notepad,bracket
+	2. Linux:Vim,Dart Editor,Sublime Text 3,nano 
+4. 目标编译运行：
+	1.	javac -d . java文件
+	2. java 包名
+```	 	
+
