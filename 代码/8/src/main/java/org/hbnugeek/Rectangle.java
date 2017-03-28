@@ -1,4 +1,4 @@
-package com.ruanko;
+package org.hbnugeek;
 /*
  * 矩形类
  */

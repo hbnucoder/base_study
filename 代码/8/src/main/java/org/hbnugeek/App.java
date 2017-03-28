@@ -1,4 +1,4 @@
-package com.ruanko;
+package org.hbnugeek;
 public class App {
 //	private static Scanner input;
 	public static void main(String[] args) {
