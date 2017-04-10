@@ -1,30 +1,23 @@
 ﻿/*
- * Copyright (c) 2000 David Flanagan.  All rights reserved.
- * This code is from the book Java Examples in a Nutshell, 2nd Edition.
- * It is provided AS-IS, WITHOUT ANY WARRANTY either expressed or implied.
- * You may study, use, and modify it for any non-commercial purpose.
- * You may distribute it non-commercially as long as you retain this notice.
- * For a commercial use license, or to purchase the book (recommended),
- * visit http://www.davidflanagan.com/javaexamples2.
+ * 功能：
+ * 这个程序打印斐波那契数列中的前20个数字
+ * 翻译
+ * 湖北师范大学极客俱乐部
  */
 package org.hbnugeek.basics;
-/**
- * This program prints out the first 20 numbers in the Fibonacci sequence.
- * Each term is formed by adding together the previous two terms in the
- * sequence, starting with the terms 1 and 1.
- **/
+
 public class Fibonacci {
     public static void main(String[] args) {
-	int n0 = 1, n1 = 1, n2;          // Initialize variables
-	System.out.print(n0 + " " +      // Print first and second terms
-			 n1 + " ");      // of the series
+	int n0 = 1, n1 = 1, n2;          // 初始化变量
+	System.out.print(n0 + " " +      // 答应第一和第二个变量
+			 n1 + " ");      
 
-        for(int i = 0; i < 18; i++) {    // Loop for the next 18 terms
-            n2 = n1 + n0;                // Next term is sum of previous two
-            System.out.print(n2 + " ");  // Print it out
-	    n0 = n1;                     // First previous becomes 2nd previous
-	    n1 = n2;                     // And current number becomes previous
+        for(int i = 0; i < 18; i++) {    // 进入循环
+            n2 = n1 + n0;                // 下一个Item是前两个Item之和
+            System.out.print(n2 + " ");  // 打印出这次Item的值
+	    n0 = n1;                     // 第一个值变成第二个值
+	    n1 = n2;                     // 当前的值变成第一个值
         }
-        System.out.println();            // Terminate the line
+        System.out.println();            // 系统结束
     }
 }

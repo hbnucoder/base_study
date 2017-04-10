@@ -5,7 +5,7 @@
  * 湖北师范大学极客俱乐部
  */
 package org.hbnugeek.basics;
-import java.io.*; // Import all classes in java.io package.  Saves typing.
+import java.io.*; // 导入java.io里面的所有类
 
 /**
  * This program displays factorials as the user enters values interactively
@@ -18,17 +18,16 @@ public class FactQuoter {
         for(;;) {
             // 显示提示信息
             System.out.print("FactQuoter> ");
-            // Read a line from the user
+            // 读取用户输入信息
             String line = in.readLine();
-            // If we reach the end-of-file, 
-	    // or if the user types "quit", then quit
+            // 如果达到文件的尾或者用户直到输入"quit" 	    
             if ((line == null) || line.equals("quit")) break;
-            // Try to parse the line, and compute and print the factorial
+            // 解析用户输入信息，并计算和打印阶乘
             try { 
                 int x = Integer.parseInt(line);
                 System.out.println(x + "! = " + Factorial4.factorial(x)); 
             }
-            // If anything goes wrong, display a generic error message
+            // 如果出现异常，就显示错误信息
             catch(Exception e) { System.out.println("Invalid Input"); }
         }
     }
